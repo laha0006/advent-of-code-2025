@@ -1,9 +1,7 @@
 data = open("input.txt", "r")
-#data = open("test.txt", "r")
 
 lines = [line.strip() for line in data]
 ins = [(line[0],int(line[1::])) for line in lines]
-
 
 def turn_dial(instruction):
     global dial
@@ -28,9 +26,6 @@ def turn_dial(instruction):
         count += 1
     part_two_count += zero
 
-
-
-
 dial = 50
 count = 0
 part_two_count = 0
@@ -38,5 +33,5 @@ part_two_count = 0
 for i in ins:
     turn_dial(i)
 
-print("p1:",count)
-print("p2:",part_two_count)
+print("p1:", count)
+print("p2:", part_two_count)
